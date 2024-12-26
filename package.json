@@ -1,0 +1,39 @@
+{
+	"name": "ts-projct-best-practices",
+	"private": true,
+	"version": "1.0.0",
+	"scripts": {
+		"dev": "rsbuild dev --open",
+		"build": "rsbuild build",
+		"preview": "rsbuild preview",
+		"release": "commit-and-tag-version -i CHANGELOG.md --same-file",
+		"prepare": "husky"
+	},
+	"dependencies": {
+		"solid-js": "^1.9.3"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.9.4",
+		"@rsbuild/core": "^1.1.8",
+		"@rsbuild/plugin-babel": "^1.0.3",
+		"@rsbuild/plugin-solid": "^1.0.4",
+		"husky": "^9.1.7",
+		"@commitlint/cli": "^19.6.1",
+		"@commitlint/config-conventional": "^19.6.0",
+		"typescript": "^5.7.2"
+	},
+	"commit-and-tag-version": {
+		"packageFiles": [
+			{
+				"filename": "package.json",
+				"type": "json"
+			}
+		],
+		"bumpFiles": [
+			{
+				"filename": "package.json",
+				"type": "json"
+			}
+		]
+	}
+}
