@@ -19,6 +19,7 @@
     "@rsbuild/core": "^1.1.8",
     "@rsbuild/plugin-babel": "^1.0.3",
     "@rsbuild/plugin-solid": "^1.0.4",
+    "commit-and-tag-version": "^12.5.0",
     "eslint": "^9",
     "husky": "^9.1.7",
     "typescript": "^5.7.2"
